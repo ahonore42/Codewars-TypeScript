@@ -20,3 +20,5 @@ export function findOutlier(integers: number[]): number {
   integers.filter((num: number) => evenOdd(num)===1)[0]:
   integers.filter((num: number) => evenOdd(num)===0)[0];
 }
+
+
