@@ -34,16 +34,16 @@ export function orderWeight(strng: string): string {
       if (aWeight===bWeight) {
         for (let i:number = 0; i < length; i++) {
           if (a.charAt(i)===b.charAt(i)) {
-            continue
+            continue;
           }
           else if (!a.charAt(i)||!b.charAt(i)) {
             return a.length - b.length;
           } else {
-            return parseInt(a.charAt(i)) - parseInt(b.charAt(i))
+            return parseInt(a.charAt(i)) - parseInt(b.charAt(i));
           }
         }
       }
       return aWeight - bWeight;
     })
-    .join(' ')
+    .join(' ');
 }
